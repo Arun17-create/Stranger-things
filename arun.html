@@ -986,10 +986,13 @@
                 left: 0;
                 top: 0;
                 transform: translateX(-100%);
-                display: flex !important;
-                /* Force flex for JS toggle */
+                display: none !important;
                 width: 280px;
                 box-shadow: 10px 0 30px rgba(0, 0, 0, 0.8);
+            }
+
+            .dashboard-active .sidebar {
+                display: flex !important;
             }
 
             .sidebar.active {
@@ -997,6 +1000,10 @@
             }
 
             .mobile-toggle {
+                display: none;
+            }
+
+            .dashboard-active .mobile-toggle {
                 display: flex;
             }
 
